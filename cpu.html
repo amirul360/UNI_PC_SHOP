@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU/GPU</title>
+
+    <style>
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+br{
+    border: black solid 2px;
+}
+
+        #container
+        {
+            display: flex;
+            flex-wrap:wrap;
+            height: 80vh;
+            width:100%;
+            font-size: 32px;
+            font-family: roboto;
+            font-weight: bold;
+            color: white;
+        }
+
+        div.title
+        {
+            font-size: 32px;
+            font-family: roboto;
+            font-weight: bold;
+           
+        }
+
+    </style>
+<!--
+
+the top bar is in top.css file
+the main content is in content.css
+
+-->
+  
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+    <iframe src="bell.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <audio control autoplay>
+        <source src="bell.ogg" type="audio/ogg">
+        <source src="bell.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <div id="container">
+        <section id="top" class="nav">
+
+          <div id="nav">
+            <a href="index.html"> <p> HOME </p></a>
+            <a href="peripherals.html"><p>PERIPHERALS</p></a>
+            <a href="tools.html"><p>TOOLS   </p></a>
+            <a href="form.html"><p>FORM</p></a>
+          </div>
+    
+            <div id="greet"><p>Welcome to tools section</p></div>
+        </section>
+    
+    <section id="content">
+
+<div id="menu">
+    <div class="title">Sections</div>
+<article id="section">
+    
+  <div class="card" style="background-size: cover; background-image: url('https://images.pexels.com/photos/1010487/pexels-photo-1010487.jpeg?auto=compress&cs=tinysrgb&w=600');">
+  <p>CPU</p>
+
+  </div>
+
+<div class="card" style="background-image:url('https://images.pexels.com/photos/7859350/pexels-photo-7859350.jpeg?auto=compress&cs=tinysrgb&w=600');">
+    <p>GPU</p>
+</div>
+<div class="card" style="background-image:url('https://images.pexels.com/photos/5553598/pexels-photo-5553598.jpeg?auto=compress&cs=tinysrgb&w=600');">
+    <p>HEATSINK</p>
+    
+    </div>
+    <div class="card" style="background-image: url('https://images.pexels.com/photos/2582935/pexels-photo-2582935.jpeg?auto=compress&cs=tinysrgb&w=600');">
+        <p>MOTHERBOARD</p>    
+
+    </div>
+
+</article>
+    
+       </div>
+</div>
+
+</div>
+
+<div id="box">
+
+    <section id="videos">
+
+        <table>
+            <thead>
+              <tr>
+                <th><div class="title">Video</div></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>  <article class="video">
+       
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/c9783HUFXOI?si=cIJfD87M57HBTxeZ" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                </article></td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <h1>Select a Package</h1>
+          <form>
+            <label>
+              <input type="radio" name="package" value="A" onclick="packageList()"> Package A
+            </label>
+            <label>
+              <input type="radio" name="package" value="B" onclick="packageList()"> Package B
+            </label>
+          </form>
+        
+          <div id="item">
+            <h2>Please select a package to see its details.</h2>
+          </div>
+
+    </section>
+
+    
+
+</div>
+</div>
+<script src="user.js"></script>
+</body>
+</html>

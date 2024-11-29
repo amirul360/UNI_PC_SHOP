@@ -1,0 +1,50 @@
+ section#top
+        {
+            background-color: rgb(203, 255, 243); 
+            display: flex;
+            color: black;
+            box-shadow: 5px grey;
+            width: 100%;
+            flex-direction: column;
+           transition: 1s;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            
+        }
+
+    section#top p{
+        border: grey ridge 5px;
+        box-shadow: #0c1114;
+        padding: 2%;
+        background-color: aqua;
+        box-shadow: 10px 5px 5px black;
+        width: max-content;
+        border-radius: 10px
+    }
+
+    section#top.nav :hover
+    {
+        background-color:  rgb(255, 255, 255) ;
+        transition: 0.2s;
+    } 
+
+     section#top.nav
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    } 
+    div#nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+
+       
+
+       
+
+

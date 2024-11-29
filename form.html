@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+br{
+    border: black solid 2px;
+}
+
+        #container
+        {
+             display: flex;
+             height: 100%;
+             width: 100%;
+             font-size: 25px;
+             font-family: roboto;
+             font-weight: bold;
+             color: black;
+             justify-content: center;
+             flex-wrap: wrap;
+        }
+
+        div.title
+        {
+            font-size: 32px;
+            font-family: roboto;
+            font-weight: bold;
+           
+        }
+
+    </style>
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+    <section id="top" class="nav">
+
+        <div id="nav">
+        <a href="index.html"> <p> HOME </p></a>
+        <a href="tools.html"><p>TOOLS</p></a>
+        <a href="cpu.html"><p>CPU/GPU</p></a>
+        <a href="peripherals.html"><p>PERIPHERALS</p></a>
+    </div>
+
+    </section>
+
+
+      <table>
+        <tr>
+          <td><div id="form">
+            <div class="title">Form</div>
+            <br>
+            
+          <p>any enquiry or looking to sell/colaborate.Please fill the form below</p>
+          <br>
+            <form name="Form" method="get" action="/process.php" onsubmit="return validateForm(event)">
+                <fieldset>
+                <legend>Enquiry form</legend>
+        
+                <p>Full Name : <input type="text" name="fname"></p><br>
+                <p>phone number : <input type="text" name="num"></p><br>
+        
+                Email: <input type="email" name="email">
+                <br><br>
+        
+                Date: <input type="date" name="Date" >
+                <br> <br>
+        
+                Time: <input type="time" name="Time" >
+                <br> <br>
+        
+                Purpose: <input type="checkbox" name="enquiry" value="enquiry">enquiry<input type="checkbox" name="Selling" value="Selling">Selling
+                <input type="checkbox" name="colaborate" value="colaborate">colaborate<input type="checkbox" name="other" value="other">other
+                <br><br>
+        
+                Explanation <textarea name="explain" id="explain"></textarea>
+               
+        
+                <input type="submit" value="Submit">
+                <input type="reset" >
+                </fieldset>
+            </form></td>
+        </tr>
+        <tr>
+          <td> </div>
+            <form onsubmit="cekNewCustomer(event)">
+             <label for="NewToShop">Are you new to the shop? (yes or no):</label>
+             <input type="text" id="NewToShop" name="NewToShop" required>
+         
+             <button type="submit">Submit</button>
+           </form></td>
+        </tr>
+      </table>
+</div>
+
+<hr>
+<div id="box">
+
+<section id="about">
+    <div class="title">About</div>
+    <article class="about">
+   
+        <ul>
+            <li>work day:monday - saturday</li>
+            <li>work hour:9am - 5pm</li>
+            <li>thank you pexels.com for the images</li>
+        </ul>
+
+    </article>
+
+</section>
+
+</div>
+</div>
+    
+</body>
+<script src="inputChek.js"></script>
+<script src="user.js"></script>
+</html>

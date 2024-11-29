@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLS</title>
+    <style>
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+br{
+    border: black solid 2px;
+}
+
+        #container
+        {
+            display: flex;
+            flex-wrap:wrap;
+            height: 80vh;
+            width:100%;
+            font-size: 32px;
+            font-family: roboto;
+            font-weight: bold;
+            color: white;
+        }
+
+        div.title
+        {
+            font-size: 32px;
+            font-family: roboto;
+            font-weight: bold;
+        }
+
+    </style>
+<!--
+the top bar is in top.css file
+the main content is in content.css
+-->
+  
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="video.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <section id="top" class="nav">
+
+            <div id="nav">
+            <a href="index.html"> <p> HOME </p></a>
+            <a href="peripherals.html"><p>PERIPHERALS</p></a>
+            <a href="cpu.html"><p>CPU/GPU</p></a>
+            <a href="form.html"><p>FORM</p></a>
+        </div>
+  
+            <div id="greet"><p>Welcome to tools section</p></div>
+        </section>
+        
+    <section id="content">
+
+<div id="menu">
+    <div class="title">Sections</div>
+<article id="section">
+
+ <div class="card" style="background-size: cover; background-image: url('https://img.kwcdn.com/product/open/2022-11-23/1669212440089-fe04803b5443412e87e1f64ffef1375e-goods.jpeg');">
+ <p>SCREEN PRY TOOL</p>
+
+</div>
+
+<div class="card" style="background-image:url('https://images.pexels.com/photos/28456610/pexels-photo-28456610/free-photo-of-collection-of-various-thermal-paste-tubes-in-flat-lay.jpeg?auto=compress&cs=tinysrgb&w=600');">
+    <p>THERMAL PASTE</p>
+</div>
+<div class="card" style="background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2Fd6b84464-b4c9-4321-8785-a976ab01b194_1.81e6dd918a16b99ef92290dd060a2927.jpeg&f=1&nofb=1&ipt=de475c8b33ce17a2e7290d27ef2bf284fc3ce81e015bab13a1a2a41a5eb9350f&ipo=images');">
+    <p>KEYCAP PULLER</p>
+    
+
+ </div>
+ <div class="card" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpimdatacdn.bahco.com%2Fmedia%2Fsub623%2F16a0feb9514f183f.png&f=1&nofb=1&ipt=5f4441426a3b7a372c4b971c168020935c7538adcc283886aa89600fc3f71c2f&ipo=images');">
+      <p>SCREWDRIVER</p>    
+
+ </div>
+
+</article>
+    
+       </div>
+</div>
+
+</div>
+
+<div id="box">
+
+<section id="videos">
+    <table>
+        <thead>
+          <tr>
+            <th> <div class="title">Video</div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <article class="video">
+   
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IrSJ46-d7wQ?si=mskObB8raVlWNCqs" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            </article></td>
+          </tr>
+        </tbody>
+      </table>
+   
+      <form onsubmit="getRespon(event)">
+        <label for="satis">Are you satisfied with the video? (yes or no):</label>
+        <input type="text" id="satis" name="satis" required>
+    
+        <button type="submit">Submit</button>
+      </form></td>
+
+</section>
+
+    </section>
+
+</div>
+</div>
+    
+</body>
+<script src="user.js"></script>
+</html>
